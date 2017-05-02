@@ -16,9 +16,14 @@ LIBS += -L"E:/openssl/win32/lib" -llibeay32
 INCLUDEPATH += $$quote(E:/openssl/win32/include)
 }
 
+include($$PWD/dagger/dagger.pri)
+
 SOURCES += main.cpp\
         mainwindow.cpp \
     p1signaction.cpp
 
 HEADERS  += mainwindow.h \
     p1signaction.h
+
+DISTFILES += \
+    dagger/dagger.pri
