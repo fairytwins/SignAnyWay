@@ -11,8 +11,14 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = SignAnyWay
 TEMPLATE = app
 
+win32{
+LIBS += -L"E:/openssl/win32/lib" -llibeay32
+INCLUDEPATH += $$quote(E:/openssl/win32/include)
+}
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    p1signaction.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    p1signaction.h
