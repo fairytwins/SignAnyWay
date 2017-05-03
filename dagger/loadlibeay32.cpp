@@ -14,7 +14,7 @@ loadlibeay32::loadlibeay32()
 
     BIO *test;
 
-    d=DSO_new();
+    /*d=DSO_new();
 
     d=DSO_load(d,"libeay32",NULL,0);
 
@@ -32,8 +32,8 @@ loadlibeay32::loadlibeay32()
 
     BIO_puts(test,"abd\n\n");
 
-    //BIO_freex(test);
+    BIO_freex(test);
 
-    DSO_free(d);
+    DSO_free(d);*/
 
 }
