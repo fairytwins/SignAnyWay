@@ -8,7 +8,9 @@ INCLUDEPATH += $$quote(E:/openssl/win32/include)
 INCLUDEPATH +=  $$PWD
 
 HEADERS += \
-    $$PWD/loadlibeay32.h
+    $$PWD/loadlibeay32.h \
+    $$PWD/vimafile.h
 
 SOURCES += \
-    $$PWD/loadlibeay32.cpp
+    $$PWD/loadlibeay32.cpp \
+    $$PWD/vimafile.cpp
